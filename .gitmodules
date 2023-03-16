@@ -1,0 +1,9 @@
+[submodule "ExoPlayerDemo"]
+	path = ExoPlayerDemo
+	url = git@github.com:cybernhl/ExoPlayerDemo.git
+[submodule "ExoPlayerSamle"]
+	path = ExoPlayerSamle
+	url = git@github.com:cybernhl/ExoPlayerSamle.git
+[submodule "HlsPlayer"]
+	path = HlsPlayer
+	url = git@github.com:cybernhl/HlsPlayer.git
