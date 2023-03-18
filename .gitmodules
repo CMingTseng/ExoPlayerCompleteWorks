@@ -7,3 +7,7 @@
 [submodule "HlsPlayer"]
 	path = HlsPlayer
 	url = git@github.com:cybernhl/HlsPlayer.git
+ 
+[submodule "google/ExoPlayer"]
+	path = google/ExoPlayer
+	url = git@github.com:cybernhl/ExoPlayer.git
