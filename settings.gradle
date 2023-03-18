@@ -5,3 +5,66 @@ include ':ctianju_ExoPlayerSamlep'
 project(":ctianju_ExoPlayerSamlep").projectDir = file("./ExoPlayerSamle/app")
 include ':TakuSemba_HlsPlayer'
 project(":TakuSemba_HlsPlayer").projectDir = file("./HlsPlayer/app")
+
+def modulePrefix = ':'
+if (gradle.ext.has('exoplayerModulePrefix')) {
+    modulePrefix += gradle.ext.exoplayerModulePrefix
+}
+
+include modulePrefix + 'Google_ExoPlayer_demo'
+include modulePrefix + 'Google_ExoPlayer_demo-cast'
+include modulePrefix + 'Google_ExoPlayer_demo-ima'
+//include modulePrefix + 'playbacktests'
+//project(modulePrefix + 'Google_ExoPlayer_demo').projectDir = new File(rootDir, 'demos/main')
+project(modulePrefix + 'Google_ExoPlayer_demo').projectDir = file("./google/ExoPlayer/demos/main")
+project(modulePrefix + 'Google_ExoPlayer_demo-cast').projectDir = file("./google/ExoPlayer/demos/cast")
+project(modulePrefix + 'Google_ExoPlayer_demo-ima').projectDir = file("./google/ExoPlayer/demo-ima")
+//project(modulePrefix + 'playbacktests').projectDir = new File(rootDir, 'playbacktests')
+
+include modulePrefix + 'library'
+include modulePrefix + 'library-core'
+include modulePrefix + 'library-dash'
+include modulePrefix + 'library-hls'
+include modulePrefix + 'library-smoothstreaming'
+include modulePrefix + 'library-ui'
+include modulePrefix + 'testutils'
+include modulePrefix + 'testutils-robolectric'
+include modulePrefix + 'extension-ffmpeg'
+include modulePrefix + 'extension-flac'
+include modulePrefix + 'extension-gvr'
+include modulePrefix + 'extension-ima'
+include modulePrefix + 'extension-cast'
+include modulePrefix + 'extension-mediasession'
+include modulePrefix + 'extension-okhttp'
+include modulePrefix + 'extension-opus'
+include modulePrefix + 'extension-vp9'
+include modulePrefix + 'extension-rtmp'
+include modulePrefix + 'extension-leanback'
+include modulePrefix + 'extension-jobdispatcher'
+
+project(modulePrefix + 'library').projectDir = file("./google/ExoPlayer/library/all")
+project(modulePrefix + 'library-core').projectDir=file("./google/ExoPlayer/library/core")
+project(modulePrefix + 'library-dash').projectDir =file("./google/ExoPlayer/library/dash")
+project(modulePrefix + 'library-hls').projectDir =file("./google/ExoPlayer/library/hls")
+project(modulePrefix + 'library-smoothstreaming').projectDir =file("./google/ExoPlayer/library/smoothstreaming")
+project(modulePrefix + 'library-ui').projectDir =file("./google/ExoPlayer/library/ui")
+project(modulePrefix + 'testutils').projectDir=file("./google/ExoPlayer/testutils")
+project(modulePrefix + 'testutils-robolectric').projectDir =file("./google/ExoPlayer/testutils_robolectric")
+project(modulePrefix + 'extension-ffmpeg').projectDir =file("./google/ExoPlayer/extensions/ffmpeg")
+project(modulePrefix + 'extension-flac').projectDir =file("./google/ExoPlayer/extensions/flac")
+project(modulePrefix + 'extension-gvr').projectDir=file("./google/ExoPlayer/extensions/gvr")
+project(modulePrefix + 'extension-ima').projectDir =file("./google/ExoPlayer/extensions/ima")
+project(modulePrefix + 'extension-cast').projectDir =file("./google/ExoPlayer/extensions/cast")
+project(modulePrefix + 'extension-mediasession').projectDir=file("./google/ExoPlayer/extensions/mediasession")
+project(modulePrefix + 'extension-okhttp').projectDir =file("./google/ExoPlayer/extensions/okhttp")
+project(modulePrefix + 'extension-opus').projectDir =file("./google/ExoPlayer/extensions/opus")
+project(modulePrefix + 'extension-vp9').projectDir =file("./google/ExoPlayer/extensions/vp9")
+project(modulePrefix + 'extension-rtmp').projectDir =file("./google/ExoPlayer/extensions/rtmp")
+project(modulePrefix + 'extension-leanback').projectDir =file("./google/ExoPlayer/extensions/leanback")
+project(modulePrefix + 'extension-jobdispatcher').projectDir =file("./google/ExoPlayer/extensions/jobdispatcher")
+
+if (gradle.ext.has('exoplayerIncludeCronetExtension')
+        && gradle.ext.exoplayerIncludeCronetExtension) {
+    include modulePrefix + 'extension-cronet'
+    project(modulePrefix + 'extension-cronet').projectDir =file("./google/ExoPlayer/extensions/cronet")
+}

@@ -31,7 +31,7 @@ buildscript {
         //DB : Room
         room_version = "2.3.0"//FIXME if use Apple M1 use version over 2.4.2 or must keep use "sqlite-jdbc" version
         //ExoPlayer
-        exoplayer_target_version = '2.9.3'//Demo is 2.10.3  (form 2.9.3 -->gap -->2.10.3)/hls is 2.6.0 /Sample is  r2.5.2
+        exoplayer_target_version = '2.8.4'//Demo is 2.10.3  (form 2.9.3 -->gap -->2.10.3)/hls is 2.6.0 /Sample is  r2.5.2
         exoplayer_version =  exoplayer_target_version
         demo_exoplayer_version = '2.10.3'//Demo is 2.10.3  (form 2.9.3 -->gap -->2.10.3)/hls is 2.6.0 /Sample is  r2.5.2
         hls_exoplayer_version = '2.7.0'//form 2.6.0 -->gap -->2.8.x/2.9.3)  NoSuchMethodError: No static method getFont
