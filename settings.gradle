@@ -18,7 +18,7 @@ include modulePrefix + 'Google_ExoPlayer_demo-ima'
 //project(modulePrefix + 'Google_ExoPlayer_demo').projectDir = new File(rootDir, 'demos/main')
 project(modulePrefix + 'Google_ExoPlayer_demo').projectDir = file("./google/ExoPlayer/demos/main")
 project(modulePrefix + 'Google_ExoPlayer_demo-cast').projectDir = file("./google/ExoPlayer/demos/cast")
-project(modulePrefix + 'Google_ExoPlayer_demo-ima').projectDir = file("./google/ExoPlayer/demo-ima")
+project(modulePrefix + 'Google_ExoPlayer_demo-ima').projectDir = file("./google/ExoPlayer/demo/ima")
 //project(modulePrefix + 'playbacktests').projectDir = new File(rootDir, 'playbacktests')
 
 include modulePrefix + 'library'
